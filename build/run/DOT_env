@@ -1,0 +1,11 @@
+# Path to zimbra repositories (with custom config.build), Example:
+# HOME_ZIMBRA=/Users/My_User/projects/docker-zcs-dev-machine/home-zimbra/zcs
+HOME_ZIMBRA=
+
+# Directory containing ssh keys with permission to clone Zimbra git repos, Example:
+# SSH=/Users/My_User/projects/docker-zcs-dev-machine/slash-zimbra/opt-zimbra/DOT-ssh
+SSH=
+
+# Path to store the build output (It might be zm_docker/build directory to deploy the build in zm-doker project)
+# BUILD=/Users/My_User/projects/zm-docker/build
+BUILD=

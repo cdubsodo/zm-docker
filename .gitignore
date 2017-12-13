@@ -5,3 +5,4 @@
 .up.lock
 _cache
 _out
+build/UBUNTU*
