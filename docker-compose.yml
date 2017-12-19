@@ -20,6 +20,7 @@ services:
          DOCKER_BUILD_TAG: '${DOCKER_BUILD_TAG}'
     volumes:
       - ${LOCAL_SRC_DIR}:/code
+      - build:/build
     configs:
       - domain_name
     secrets:
@@ -246,3 +247,4 @@ configs:
 volumes:
   blobvolume: {}
   tmpvolume: {}
+  build: {}

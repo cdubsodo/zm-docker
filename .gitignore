@@ -5,4 +5,7 @@
 .up.lock
 _cache
 _out
-build/UBUNTU*
+BUILDS/
+build/config
+!build/config/DOT-ssh/config
+!build/config/DOT-ssh/README.md

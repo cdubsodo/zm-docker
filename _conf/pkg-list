@@ -1,4 +1,0 @@
-deb [trusted=yes] file:///build/UBUNTU16_64-F9TEAMS-890-20171213170852-FOSS-1000/archives/zimbra-foss/u16 ./ # Zimbra Package Archive (zimbra-foss)
-
-# Zimbra Thirdparty Archive
-deb [arch=amd64]  https://repo.zimbra.com/apt/87 xenial zimbra
