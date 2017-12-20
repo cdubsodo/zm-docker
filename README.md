@@ -66,3 +66,7 @@ If desired, monitor the state of of the `zm-docker_zmc-proxy` service. When it h
 ## Undeploying the Stack
 
 	make down
+
+## Build the project with latest changes and desired branch
+1. Address the following readme, it contains prerequisites must be acomplish: https://github.com/Zimbra/zm-docker/blob/feature/ha-distributed/build/config/DOT-ssh/README.md
+2. Address the following readme, it contains all setup and commands you will need to generate a new build into `zm-docker`: https://github.com/Zimbra/zm-docker/blob/feature/ha-distributed/build/README.md  

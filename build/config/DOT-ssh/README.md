@@ -1,1 +1,3 @@
-Add and SSH key to this directory. It will be deployed to the build container and used to clone github.com/Zimbra/* repositories. Initially `Zimbra/zm-build` will be cloned. Then `Zimbra/zm-build/build.pl` will be executed and all dependent repositories will be cloned and built.
+Add an SSH key to this directory. It will be deployed to the build container and used to clone github.com/Zimbra/* repositories. Initially `Zimbra/zm-build` will be cloned. Then `Zimbra/zm-build/build.pl` will be executed and all dependent repositories will be cloned and built.
+
+- You can find how to generate and setup `SSH Keys` for you Github acconunt here: https://help.github.com/articles/connecting-to-github-with-ssh/
