@@ -15,4 +15,4 @@ cp /home/build/config/config.build /home/build/zm/zm-build/config.build
 (cd /home/build/zm/zm-build && ./build.pl)
 
 # update symbolic latest build symbolic link
-(cd /home/build/zm/BUILDS && unlink latest && ln -s ./`ls  -lc | tail -n1 | awk  '{print $NF}'` latest)
+(cd /home/build/zm/BUILDS && rm -f latest && ln -s ./`ls  -lc | tail -n1 | awk  '{print $NF}'` latest)
