@@ -292,8 +292,7 @@ logs:
 ZM_DOCKER_ABSOLUT_PATH =  $(shell pwd)
 compile:
 	docker build -t zm-docker-build ${ZM_DOCKER_ABSOLUT_PATH}/build
-	docker run --name zm-docker-build -it -v ${ZM_DOCKER_ABSOLUT_PATH}/build/BUILDS:/home/build/zm/BUILDS -v ${ZM_DOCKER_ABSOLUT_PATH}/build/config:/home/build/config zm-docker-build bash
-	docker container rm zm-docker-build -f
+	docker run --rm -v ${ZM_DOCKER_ABSOLUT_PATH}/BUILDS:/home/build/zm/BUILDS -v ${ZM_DOCKER_ABSOLUT_PATH}/build/config:/home/build/config zm-docker-build
 
 clean: down
 	rm -rf .config .secrets .keystore
