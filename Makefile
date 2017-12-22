@@ -302,6 +302,7 @@ compile:
 # necessary because the docker volume can not be leveraged during docker-compose build in zm-docker
 	@docker run -d --name ZM-BUILD -v ZM-BUILDS:/BUILDS busybox
 	docker cp ZM-BUILD:/BUILDS/. ./BUILDS
+	@-docker container rm -f ZM-BUILD
 
 clean: down
 	rm -rf .config .secrets .keystore
