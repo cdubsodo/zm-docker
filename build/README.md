@@ -7,9 +7,9 @@ This container facilitates the production of a custom build of the Zimbra softwa
 ## Produce a new build of Zimbra FOSS
 - Once you have all your `SSH keys` in place and customized your `config.build` make sure your CWD is `./zm-docker`
 - Run `make compile`. Compiling all Zimbra artifacts takes some time
-- - *NOTE:* if you `SSH key` has a passphrase, then you will promted to type it
+  - *NOTE:* if you `SSH key` has a passphrase, then you will promted to type it
 
-	Enter passphrase for `{your SSH key}`:
+		Enter passphrase for `{your SSH key}`:
 
 - If all goes well you can find the produced build into the `zm-docker/BUILDS` directory
 - After the build completes successfully a symbolic link is generated `zm-docker/BUILDS/latest` that points at the most recently produced build.
