@@ -297,7 +297,6 @@ compile:
 	docker run --rm -it -v ZM-BUILDS:/home/build/zm/BUILDS -v ${PWD}/build/config:/home/build/config zm-docker-build
 	@rm -rf ./BUILDS
 	@mkdir -p ./BUILDS
-	@-docker container rm -f ZM-BUILD
 # mount the docker volume containing the build output so that we can CP it to the host
 # necessary because the docker volume can not be leveraged during docker-compose build in zm-docker
 	@docker run -d --name ZM-BUILD -v ZM-BUILDS:/BUILDS busybox
